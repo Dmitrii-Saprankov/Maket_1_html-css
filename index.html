@@ -5,40 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Simple Template</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <header class="page_header">
-            <div class="container header_flex_block">
-                <div class="header_left_block">
-                    <h1>Product name</h1>
+    <header class="header">
+        <div class="header__wrapper container">
+            <div class="header__info">
+                <h1 class="header__title">Product name</h1>
 
-                    <ul class="header_list">
-                        <li>Put on this page information about your product</li>
-                        <li>A detailed description of your product</li>
-                        <li>Tell us about the advantages and merits</li>
-                        <li>Associate the page with the payment system</li>
-                    </ul>
-                </div>
+                <ul class="header__list">
+                    <li class="header__list__item">Put on this page information about your product</li>
+                    <li class="header__list__item">A detailed description of your product</li>
+                    <li class="header__list__item">Tell us about the advantages and merits</li>
+                    <li class="header__list__item">Associate the page with the payment system
+                    </li>
+                </ul>
             </div>
-        </header>
 
-        <section class="about_product">
-            <div class="container product_flex_block">
-                <div class="product_left_block">
-                    <h3 class="product_heading">About your product</h3>
+            <img src="images/white.svg" alt="Product video" class="header__img">
 
-                    <p class="product_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis
+        </div>
+    </header>
+
+    <main>
+        <section class="about-product">
+            <div class="about-product__wrapper container">
+                <div class="about-product__info">
+                    <h3 class="about-product__title">About your product</h3>
+
+                    <p class="about-product__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+                        facilis
                         fuga, illo
                         at.
                         Natus eos,
                         eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.
                     </p>
-                    <p class="product_text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel
+                    <p class="about-product__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
+                        ipsa vel
                         exercitationem ullam
                         quos
                         aut
@@ -47,68 +55,133 @@
                     </p>
                 </div>
 
+                <video class="about-product__video"
+                    src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" controls
+                    preload="metadata">Your browser do not support the <a
+                        href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm">video</a></video>
+
             </div>
         </section>
 
-        <section class="pluses_product">
-            <div class="container">
-                <h3 class="pluses_heading">Dignity and pluses product</h3>
+        <section class="pluses">
+            <div class="pluses__wrapper container">
+                <h3 class="pluses__title">Dignity and pluses product</h3>
 
-                <div class="pluses_item_block">
-                    <article class="pluses_item">
-                        <img src="images/plus icon.svg" alt="pluses logo">
+                <div class="pluses__item-block">
+                    <article class="pluses__item">
+                        <svg width="34" height="35" viewBox="0 0 34 35" class="pluses__logo">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.00001 1.99983H33V33.9999H1.00001V1.99983Z" fill="#445161" />
+                            <path
+                                d="M15.7676 8.71094H17.2324C17.3626 8.71094 17.4277 8.77604 17.4277 8.90625V26.0938C17.4277 26.224 17.3626 26.2891 17.2324 26.2891H15.7676C15.6374 26.2891 15.5723 26.224 15.5723 26.0938V8.90625C15.5723 8.77604 15.6374 8.71094 15.7676 8.71094Z"
+                                fill="white" />
+                            <path
+                                d="M8.29688 16.5723H24.7031C24.8333 16.5723 24.8984 16.6374 24.8984 16.7676V18.2324C24.8984 18.3626 24.8333 18.4277 24.7031 18.4277H8.29688C8.16667 18.4277 8.10156 18.3626 8.10156 18.2324V16.7676C8.10156 16.6374 8.16667 16.5723 8.29688 16.5723Z"
+                                fill="white" />
+                        </svg>
 
-                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit
+                        <p class="pluses__text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit
                             iure
                             placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime,
                             quaerat
                             porro totam, dolore minus inventore.</p>
                     </article>
 
-                    <article class="pluses_item">
-                        <img src="images/plus icon.svg" alt="pluses logo">
+                    <article class="pluses__item">
+                        <svg width="34" height="35" viewBox="0 0 34 35" class="pluses__logo">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.00001 1.99983H33V33.9999H1.00001V1.99983Z" fill="#445161" />
+                            <path
+                                d="M15.7676 8.71094H17.2324C17.3626 8.71094 17.4277 8.77604 17.4277 8.90625V26.0938C17.4277 26.224 17.3626 26.2891 17.2324 26.2891H15.7676C15.6374 26.2891 15.5723 26.224 15.5723 26.0938V8.90625C15.5723 8.77604 15.6374 8.71094 15.7676 8.71094Z"
+                                fill="white" />
+                            <path
+                                d="M8.29688 16.5723H24.7031C24.8333 16.5723 24.8984 16.6374 24.8984 16.7676V18.2324C24.8984 18.3626 24.8333 18.4277 24.7031 18.4277H8.29688C8.16667 18.4277 8.10156 18.3626 8.10156 18.2324V16.7676C8.10156 16.6374 8.16667 16.5723 8.29688 16.5723Z"
+                                fill="white" />
+                        </svg>
 
-                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit
+                        <p class="pluses__text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit
                             iure
                             placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime,
                             quaerat
                             porro totam, dolore minus inventore.</p>
                     </article>
 
-                    <article class="pluses_item">
-                        <img src="images/plus icon.svg" alt="pluses logo">
+                    <article class="pluses__item">
+                        <svg width="34" height="35" viewBox="0 0 34 35" class="pluses__logo">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.00001 1.99983H33V33.9999H1.00001V1.99983Z" fill="#445161" />
+                            <path
+                                d="M15.7676 8.71094H17.2324C17.3626 8.71094 17.4277 8.77604 17.4277 8.90625V26.0938C17.4277 26.224 17.3626 26.2891 17.2324 26.2891H15.7676C15.6374 26.2891 15.5723 26.224 15.5723 26.0938V8.90625C15.5723 8.77604 15.6374 8.71094 15.7676 8.71094Z"
+                                fill="white" />
+                            <path
+                                d="M8.29688 16.5723H24.7031C24.8333 16.5723 24.8984 16.6374 24.8984 16.7676V18.2324C24.8984 18.3626 24.8333 18.4277 24.7031 18.4277H8.29688C8.16667 18.4277 8.10156 18.3626 8.10156 18.2324V16.7676C8.10156 16.6374 8.16667 16.5723 8.29688 16.5723Z"
+                                fill="white" />
+                        </svg>
 
-                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit
+                        <p class="pluses__text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit
                             iure
                             placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime,
                             quaerat
                             porro totam, dolore minus inventore.</p>
                     </article>
 
-                    <article class="pluses_item">
-                        <img src="images/plus icon.svg" alt="pluses logo">
+                    <article class="pluses__item">
+                        <svg width="34" height="35" viewBox="0 0 34 35" class="pluses__logo">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.00001 1.99983H33V33.9999H1.00001V1.99983Z" fill="#445161" />
+                            <path
+                                d="M15.7676 8.71094H17.2324C17.3626 8.71094 17.4277 8.77604 17.4277 8.90625V26.0938C17.4277 26.224 17.3626 26.2891 17.2324 26.2891H15.7676C15.6374 26.2891 15.5723 26.224 15.5723 26.0938V8.90625C15.5723 8.77604 15.6374 8.71094 15.7676 8.71094Z"
+                                fill="white" />
+                            <path
+                                d="M8.29688 16.5723H24.7031C24.8333 16.5723 24.8984 16.6374 24.8984 16.7676V18.2324C24.8984 18.3626 24.8333 18.4277 24.7031 18.4277H8.29688C8.16667 18.4277 8.10156 18.3626 8.10156 18.2324V16.7676C8.10156 16.6374 8.16667 16.5723 8.29688 16.5723Z"
+                                fill="white" />
+                        </svg>
 
-                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit
+                        <p class="pluses__text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit
                             iure
                             placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime,
                             quaerat
                             porro totam, dolore minus inventore.</p>
                     </article>
 
-                    <article class="pluses_item">
-                        <img src="images/plus icon.svg" alt="pluses logo">
+                    <article class="pluses__item">
+                        <svg width="34" height="35" viewBox="0 0 34 35" class="pluses__logo">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.00001 1.99983H33V33.9999H1.00001V1.99983Z" fill="#445161" />
+                            <path
+                                d="M15.7676 8.71094H17.2324C17.3626 8.71094 17.4277 8.77604 17.4277 8.90625V26.0938C17.4277 26.224 17.3626 26.2891 17.2324 26.2891H15.7676C15.6374 26.2891 15.5723 26.224 15.5723 26.0938V8.90625C15.5723 8.77604 15.6374 8.71094 15.7676 8.71094Z"
+                                fill="white" />
+                            <path
+                                d="M8.29688 16.5723H24.7031C24.8333 16.5723 24.8984 16.6374 24.8984 16.7676V18.2324C24.8984 18.3626 24.8333 18.4277 24.7031 18.4277H8.29688C8.16667 18.4277 8.10156 18.3626 8.10156 18.2324V16.7676C8.10156 16.6374 8.16667 16.5723 8.29688 16.5723Z"
+                                fill="white" />
+                        </svg>
 
-                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit
+                        <p class="pluses__text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit
                             iure
                             placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime,
                             quaerat
                             porro totam, dolore minus inventore.</p>
                     </article>
 
-                    <article class="pluses_item">
-                        <img src="images/plus icon.svg" alt="pluses logo">
+                    <article class="pluses__item">
+                        <svg width="34" height="35" viewBox="0 0 34 35" class="pluses__logo">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.00001 1.99983H33V33.9999H1.00001V1.99983Z" fill="#445161" />
+                            <path
+                                d="M15.7676 8.71094H17.2324C17.3626 8.71094 17.4277 8.77604 17.4277 8.90625V26.0938C17.4277 26.224 17.3626 26.2891 17.2324 26.2891H15.7676C15.6374 26.2891 15.5723 26.224 15.5723 26.0938V8.90625C15.5723 8.77604 15.6374 8.71094 15.7676 8.71094Z"
+                                fill="white" />
+                            <path
+                                d="M8.29688 16.5723H24.7031C24.8333 16.5723 24.8984 16.6374 24.8984 16.7676V18.2324C24.8984 18.3626 24.8333 18.4277 24.7031 18.4277H8.29688C8.16667 18.4277 8.10156 18.3626 8.10156 18.2324V16.7676C8.10156 16.6374 8.16667 16.5723 8.29688 16.5723Z"
+                                fill="white" />
+                        </svg>
 
-                        <p class="text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit
+                        <p class="pluses__text">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque,
+                            impedit
                             iure
                             placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime,
                             quaerat
@@ -119,219 +192,242 @@
         </section>
 
         <section class="screenshots_block">
-            <div class="container">
-                <figure class="screenshots_item">
-                    <img src="images/grey.svg" alt="screenshot" class="screenshot">
+            <div class="screenshots__wrapper container">
+                <h3 class="screenshots__title">Screenshots</h3>
 
-                    <figcaption class="screenshot_heading">
-                        <h3>The description for the image</h3>
+                <div class="screenshots__list">
+                    <figure class="screenshots__item">
+                        <img src="images/grey.svg" alt="screenshot" class="screenshot__img">
 
-                        <p class="text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
-                            ipsa
-                            vel
-                            exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi
-                            itaque,
-                            unde perferendis nemo debitis dolor.</p>
-                    </figcaption>
-                </figure>
+                        <figcaption class="screenshot__text-block">
+                            <h4 class="screenshot__text-block-title">The description for the image</h4>
 
-                <figure class="screenshots_item">
-                    <img src="images/grey.svg" alt="screenshot" class="screenshot">
+                            <p class="screensots__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque
+                                itaque,
+                                ipsa
+                                vel
+                                exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi
+                                itaque,
+                                unde perferendis nemo debitis dolor.</p>
+                        </figcaption>
+                    </figure>
 
-                    <figcaption class="screenshot_heading">
-                        <h3>The description for the image</h3>
+                    <figure class="screenshots__item">
+                        <img src="images/grey.svg" alt="screenshot" class="screenshot__img">
 
-                        <p class="text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
-                            ipsa
-                            vel
-                            exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi
-                            itaque,
-                            unde perferendis nemo debitis dolor.</p>
-                    </figcaption>
-                </figure>
+                        <figcaption class="screenshot__text-block">
+                            <h4 class="screenshot__text-block-title">The description for the image</h4>
 
-                <figure class="screenshots_item">
-                    <img src="images/grey.svg" alt="screenshot" class="screenshot">
+                            <p class="screensots__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque
+                                itaque,
+                                ipsa
+                                vel
+                                exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi
+                                itaque,
+                                unde perferendis nemo debitis dolor.</p>
+                        </figcaption>
+                    </figure>
 
-                    <figcaption class="screenshot_heading">
-                        <h3>The description for the image</h3>
+                    <figure class="screenshots__item">
+                        <img src="images/grey.svg" alt="screenshot" class="screenshot__img">
 
-                        <p class="text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
-                            ipsa
-                            vel
-                            exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi
-                            itaque,
-                            unde perferendis nemo debitis dolor.</p>
-                    </figcaption>
-                </figure>
+                        <figcaption class="screenshot__text-block">
+                            <h4 class="screenshot__text-block-title">The description for the image</h4>
 
-                <figure class="screenshots_item">
-                    <img src="images/grey.svg" alt="screenshot" class="screenshot">
+                            <p class="screensots__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque
+                                itaque,
+                                ipsa
+                                vel
+                                exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi
+                                itaque,
+                                unde perferendis nemo debitis dolor.</p>
+                        </figcaption>
+                    </figure>
 
-                    <figcaption class="screenshot_heading">
-                        <h3>The description for the image</h3>
+                    <figure class="screenshots__item">
+                        <img src="images/grey.svg" alt="screenshot" class="screenshot__img">
 
-                        <p class="text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
-                            ipsa
-                            vel
-                            exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi
-                            itaque,
-                            unde perferendis nemo debitis dolor.</p>
-                    </figcaption>
-                </figure>
+                        <figcaption class="screenshot__text-block">
+                            <h4 class="screenshot__text-block-title">The description for the image</h4>
+
+                            <p class="screensots__text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque
+                                itaque,
+                                ipsa
+                                vel
+                                exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi
+                                itaque,
+                                unde perferendis nemo debitis dolor.</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
 
-        <section class="reviews_block">
-            <div class="container">
-                <figure class="reviews_item">
-                    <img src="images/user.svg" alt="reviews foto" class="reviews_foto">
+        <section class="reviews">
+            <div class="reviews__wrapper container">
+                <h3 class="reviews__title">Reviews</h3>
 
-                    <figcaption>
-                        <p class="text reviews_text">Porro officia cumque sint deleniti nemo facere rem vitae odit
-                            inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero
-                            doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
-                        <p class="text reviewer_name_text">Lourens S.</p>
-                    </figcaption>
-                </figure>
+                <div class="reviews__list">
+                    <figure class="reviews__item">
+                        <img src="images/user.svg" alt="reviews foto" class="reviews__foto">
 
-                <figure class="reviews_item">
-                    <img src="images/user.svg" alt="reviews foto" class="reviews_foto">
+                        <figcaption class="reviews__text">
+                            <p class="reviews__main-text">Porro officia cumque sint deleniti nemo facere rem vitae odit
+                                inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit.
+                                Libero
+                                doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+                            <p class="reviewer__name-text">Lourens S.</p>
+                        </figcaption>
+                    </figure>
 
-                    <figcaption>
-                        <p class="text reviews_text">Porro officia cumque sint deleniti nemo facere rem vitae odit
-                            inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero
-                            doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
-                        <p class="text reviewer_name_text">Lourens S.</p>
-                    </figcaption>
-                </figure>
+                    <figure class="reviews__item">
+                        <img src="images/user.svg" alt="reviews foto" class="reviews__foto">
 
-                <figure class="reviews_item">
-                    <img src="images/user.svg" alt="reviews foto" class="reviews_foto">
+                        <figcaption class="reviews__text">
+                            <p>Porro officia cumque sint deleniti nemo facere rem vitae odit
+                                inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit.
+                                Libero
+                                doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+                            <p class="reviewer__name-text">Lourens S.</p>
+                        </figcaption>
+                    </figure>
 
-                    <figcaption>
-                        <p class="text reviews_text">Porro officia cumque sint deleniti nemo facere rem vitae odit
-                            inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero
-                            doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
-                        <p class="text reviewer_name_text">Lourens S.</p>
-                    </figcaption>
-                </figure>
+                    <figure class="reviews__item">
+                        <img src="images/user.svg" alt="reviews foto" class="reviews__foto">
 
-                <figure class="reviews_item">
-                    <img src="images/user.svg" alt="reviews foto" class="reviews_foto">
+                        <figcaption class="reviews__text">
+                            <p>Porro officia cumque sint deleniti nemo facere rem vitae odit
+                                inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit.
+                                Libero
+                                doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+                            <p class="reviewer__name-text">Lourens S.</p>
+                        </figcaption>
+                    </figure>
 
-                    <figcaption>
-                        <p class="text reviews_text">Porro officia cumque sint deleniti nemo facere rem vitae odit
-                            inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero
-                            doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
-                        <p class="text reviewer_name_text">Lourens S.</p>
-                    </figcaption>
-                </figure>
+                    <figure class="reviews__item">
+                        <img src="images/user.svg" alt="reviews foto" class="reviews__foto">
+
+                        <figcaption class="reviews__text">
+                            <p>Porro officia cumque sint deleniti nemo facere rem vitae odit
+                                inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit.
+                                Libero
+                                doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+                            <p class="reviewer__name-text">Lourens S.</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
 
-        <section class="buy_block">
-            <div class="container">
-                <div class="buy_card">
-                    <h3 class="card_heading">Standart</h3>
+        <section class="buy">
+            <div class="buy__wrapper container">
+                <h3 class="buy__title">Buy it now</h3>
 
-                    <p class="text price_card">$100</p>
+                <div class="buy__list">
+                    <div class="buy__card">
+                        <h4 class="buy__card-title">Standart</h4>
 
-                    <ol class="card_list">
-                        <li>Porro officia cumque sint delenit</li>
-                        <li>Тemo facere rem vitae odit</li>
-                        <li> Cum odio, iste quia doloribus autem</li>
-                        <li>Aperiam nulla ea neque</li>
-                    </ol>
+                        <p class="buy__card-price">$100</p>
 
-                    <button class="btn_card">BUY</button>
-                </div>
+                        <ol class="buy__card-list">
+                            <li class="buy__card-list-item">Porro officia cumque sint delenit</li>
+                            <li class="buy__card-list-item">Тemo facere rem vitae odit</li>
+                            <li class="buy__card-list-item"> Cum odio, iste quia doloribus autem</li>
+                            <li class="buy__card-list-item">Aperiam nulla ea neque</li>
+                        </ol>
 
-                <div class="buy_card">
-                    <h3 class="card_heading">Premium</h3>
-
-                    <p class="text price_card">$150</p>
-
-                    <ol class="card_list">
-                        <li>Porro officia cumque sint delenit</li>
-                        <li>Тemo facere rem vitae odit</li>
-                        <li> Cum odio, iste quia doloribus autem</li>
-                        <li>Aperiam nulla ea neque</li>
-                        <li>Porro officia cumque sint delenit</li>
-                        <li>Тemo facere rem vitae odit</li>
-                        <li> Cum odio, iste quia doloribus autem</li>
-                    </ol>
-
-                    <button class="btn_card">BUY</button>
-                </div>
-
-                <div class="buy_card">
-                    <h3 class="card_heading">Lux</h3>
-
-                    <p class="text price_card">$200</p>
-
-                    <ol class="card_list">
-                        <li>Porro officia cumque sint delenit</li>
-                        <li>Тemo facere rem vitae odit</li>
-                        <li> Cum odio, iste quia doloribus autem</li>
-                        <li>Aperiam nulla ea neque</li>
-                        <li>Porro officia cumque sint delenit</li>
-                        <li>Тemo facere rem vitae odit</li>
-                        <li> Cum odio, iste quia doloribus autem</li>
-                        <li>Aperiam nulla ea neque</li>
-                        <li>Porro officia cumque sint delenit</li>
-                        <li>Тemo facere rem vitae odit</li>
-                        <li> Cum odio, iste quia doloribus autem</li>
-                    </ol>
-
-                    <button class="btn_card">BUY</button>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="page_contacts">
-            <div class="container">
-
-                <h3>Contacts</h3>
-
-                <form action="#" class="form_footer">
-                    <div class="form_message_block">
-                        <input type="text" placeholder="Your name" class="input_row">
-                        <input type="email" placeholder="Your e-mail" class="input_row">
-                        <textarea cols="30" rows="10" placeholder="Your message"
-                            class="input_row input_area"></textarea>
-
-                        <input type="submit" id="btn" value="submit" class="btn-form">
+                        <a href="#" class="buy__btn">BUY</a>
                     </div>
 
-                    <div class="contacts_block">
-                        <ul class="contacts_list">
-                            <li><a href="skype:here_your_login_skype?call">here_your_login_skype</a></li>
-                            <li><a href="callto://+279679659">279679659</a></li>
-                            <li><a href="mailto:psdhtmlcss@mail.ru">psdhtmlcss@mail.ru</a></li>
-                            <li><a href="tel:+7800045685555">80 00 4568 55 55</a></li>
-                        </ul>
+                    <div class="buy__card">
+                        <h4 class="buy__card-title">Premium</h4>
 
-                        <div class="socials">
-                            <img src="images/twitter.svg" alt="twitter">
-                            <img src="images/vk.svg" alt="VK">
-                            <img src="images/g+.svg" alt="Google+">
-                            <img src="images/fb.svg" alt="Facebook">
-                        </div>
+                        <p class="buy__card-price">$150</p>
+
+                        <ol class="buy__card-list">
+                            <li class="buy__card-list-item">Porro officia cumque sint delenit</li>
+                            <li class="buy__card-list-item">Тemo facere rem vitae odit</li>
+                            <li class="buy__card-list-item"> Cum odio, iste quia doloribus autem</li>
+                            <li class="buy__card-list-item">Aperiam nulla ea neque</li>
+                            <li class="buy__card-list-item">Porro officia cumque sint delenit</li>
+                            <li class="buy__card-list-item">Тemo facere rem vitae odit</li>
+                            <li class="buy__card-list-item"> Cum odio, iste quia doloribus autem</li>
+                        </ol>
+
+                        <a href="#" class="buy__btn">BUY</a>
                     </div>
 
-                </form>
+                    <div class="buy__card buy__card_no-mr">
+                        <h4 class="buy__card-title">Lux</h4>
+
+                        <p class="buy__card-price">$200</p>
+
+                        <ol class="buy__card-list">
+                            <li class="buy__card-list-item">Porro officia cumque sint delenit</li>
+                            <li class="buy__card-list-item">Тemo facere rem vitae odit</li>
+                            <li class="buy__card-list-item"> Cum odio, iste quia doloribus autem</li>
+                            <li class="buy__card-list-item">Aperiam nulla ea neque</li>
+                            <li class="buy__card-list-item">Porro officia cumque sint delenit</li>
+                            <li class="buy__card-list-item">Тemo facere rem vitae odit</li>
+                            <li class="buy__card-list-item"> Cum odio, iste quia doloribus autem</li>
+                            <li class="buy__card-list-item">Aperiam nulla ea neque</li>
+                            <li class="buy__card-list-item">Porro officia cumque sint delenit</li>
+                            <li class="buy__card-list-item">Тemo facere rem vitae odit</li>
+                            <li class="buy__card-list-item"> Cum odio, iste quia doloribus autem</li>
+                        </ol>
+
+                        <a href="#" class="buy__btn">BUY</a>
+                    </div>
+                </div>
+
             </div>
         </section>
-
-        <footer class="page_footer">
-            <div class="container">
-                <p class="text">Copyright &copy; 2014 Product name · PSD HTML CSS</p>
-            </div>
-        </footer>
     </main>
 
+    <footer class="footer">
+        <div class="footer__wrapper container">
+
+            <h3 class="footer__title">Contacts</h3>
+
+            <form action="#" class="footer__form">
+                <div class="footer__message">
+                    <input type="text" placeholder="Your name:" class="footer__input-row">
+                    <input type="email" placeholder="Your e-mail:" class="footer__input-row">
+                    <textarea cols="30" rows="10" placeholder="Your message:" class="footer__input-area"></textarea>
+
+                    <button class="footer__btn">SEND</button>
+                </div>
+
+                <div class="footer__our-contacts">
+                    <ul class="footer__contacts-list">
+                        <li class="footer__list-item"><a
+                                href="skype:here_your_login_skype?call">here_your_login_skype</a></li>
+                        <li class="footer__list-item"><a href="callto://+279679659">279679659</a></li>
+                        <li class="footer__list-item"><a href="mailto:psdhtmlcss@mail.ru">psdhtmlcss@mail.ru</a>
+                        </li>
+                        <li class="footer__list-item"><a href="tel:+7800045685555">80 00 4568 55 55</a></li>
+                    </ul>
+
+                    <ul class="footer__socials">
+                        <li class="footer__socials-item"><a href="#"><img src="images/twitter.svg" alt="twitter"></a>
+                        </li>
+                        <li class="footer__socials-item"><a href="#"><img src="images/vk.svg" alt="VK"></a></li>
+                        <li class="footer__socials-item"><a href="#"><img src="images/g+.svg" alt="Google+"></a>
+                        </li>
+                        <li class="footer__socials-item"><a href="#"><img src="images/fb.svg" alt="Facebook"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="copyright">
+            <div class="copyright__wrapper container">
+                <p class="copyright__text">Copyright &copy; 2014 Product name · PSD HTML CSS</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
